@@ -18,6 +18,7 @@ def main():
     dt = 0
 
     asteroids = pygame.sprite.Group()
+    Asteroid.containers = (asteroids, drawable, updatable)
     while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
